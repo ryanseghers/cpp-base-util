@@ -20,4 +20,5 @@ set(SOURCE_FILES
 )
 
 add_library(CppBaseUtilLib STATIC ${SOURCE_FILES})
+target_link_libraries(CppBaseUtilLib PUBLIC fmt::fmt)
 target_include_directories(CppBaseUtilLib PUBLIC ".")
